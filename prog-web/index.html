@@ -4,6 +4,7 @@
 	<title>Pemrograman Web</title>
 	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/font-awesome.min.css">
 	<link rel="icon" href="../assets/favicon.ico">
 </head>
 <body style="display: none;">
@@ -36,10 +37,20 @@
 							<li><a href="konsep-web-2.html">Website? HTML vs PHP</a></li>
 							<li><a href="intro-php-1.html">Konsep Dasar PHP (Variabel, Operator)</a></li>
 							<li><a href="intro-php-2.html">Konsep Dasar PHP (Implementasi Struktur Dasar Algoritma)</a></li>
-							<li><a href="array.html">PHP - Array</a></li>
+							<li><a href="array.html">PHP Array</a></li>
 							<li><a href="form-basic.html">Dasar Penanganan Form HTML menggunakan PHP</a></li>
 							<li><a href="kalkulator.html">Studi Kasus: Kalkulator Sederhana (Struktur Dasar Algoritma & Form)</a></li>
-							<!-- <li><a href="lanjutan-mp.html">Pertemuan 3: Manajemen Proses Lanjutan</a></li> -->
+							<li><a data-toggle="collapse" href="#php-database" aria-expanded="false" aria-controls="php-database" class="list-dropdown">PHP - Database <i class="fa fa-caret-right"></i></a></li>
+							<div id="php-database" class="collapse">
+								<ul class="list-aligned">
+									<li><a href="php-db-konsep.html">Konsep PHP - Database</a>
+									<li><a href="">Read</a>
+									<!-- <li><a href="">Create</a>
+									<li><a href="">Delete</a>
+									<li><a href="">Update</a>
+									<li><a href="">Contoh Kasus Lengkap</a> -->
+								</ul>
+							</div>
 						</ul>
 						<a href="../">Back</a>
 					</div>
@@ -91,5 +102,8 @@ https://bhaskaragautama.github.io/kuliah/ -->
 <script type="text/javascript">
 	$(document).ready(function() {
 		$('body').fadeIn('slow');
+		$('.list-dropdown').click(function () {
+			$(this).children().toggleClass('fa-caret-down fa-caret-right');
+		});
 	});
 </script>
