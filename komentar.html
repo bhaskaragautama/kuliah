@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<title>Komentar</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="icon" href="assets/favicon.ico">
+</head>
+<body style="display: none;">
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="display-4 text-center">Komentar</h1>
+			</div>
+		</div>
+		<div class="row justify-content-center mt-3">
+			<div class="col-lg-8" id="comment-container">
+			</div>
+			<div class="col-lg-8">
+				<a href="index.html" class="btn btn-warning btn-sm mt-3">Back</a>
+				<button class="btn btn-primary btn-sm mt-3" data-toggle="modal" data-target="#komentar">Comments</button>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<!-- Modal -->
+<div class="modal fade" id="komentar" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="komentarLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSckI8gbQ_-1STFz6qoRPyj7IAqDXD5DOIAWIJhEZQt5S3z7hA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a href="komentar.html" class="btn btn-secondary">Close</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Default Statcounter code for Materi Perkuliahan
+  https://bhaskaragautama.github.io/kuliah/ -->
+  <script type="text/javascript">
+	var sc_project=12494042; 
+	var sc_invisible=1; 
+	var sc_security="7388f50b"; 
+	var sc_https=1; 
+	var sc_remove_link=1; 
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript>
+  <div class="statcounter"><img class="statcounter" src="https://c.statcounter.com/12494042/0/7388f50b/1/" alt="Web Analytics"></div>
+</noscript>
+<!-- End of Statcounter Code -->
+
+<script>
+	var spData = null;
+	function doData(json) {
+			spData = json.feed.entry;
+	}
+
+	$(document).ready(function() {
+		$('body').fadeIn('slow');
+		for(var r=0; r<spData.length; r++) {
+			var cell = spData[r]["gs$cell"];
+			var val = cell["$t"];
+			if(cell.row > 1 && cell.col == 2) {
+				$('#comment-container').append('<div class="alert alert-primary">'+val+'<div>');
+			}
+		}
+	});
+</script>
+
+<script src="https://spreadsheets.google.com/feeds/cells/14AEJRQ8deSdS6xeNDcnceG1Ysivqm1vdtZnef34wOBg/1/public/values?alt=json-in-script&callback=doData"></script>
