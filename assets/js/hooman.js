@@ -5,9 +5,9 @@ function setCookie(cname, cvalue, exdays) {
    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
  }
 
-function jQexec(mk){
-   if(hoom.indexOf(md5(mk)) >= 0) {
-      setCookie('mk', mk, 30);
+function jQexec(cl){
+   if(hoom.indexOf(md5(cl)) >= 0) {
+      setCookie('cl', cl, 30);
       window.location.href='home.html';
    } else {
       return 0;
