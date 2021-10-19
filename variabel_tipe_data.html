@@ -15,23 +15,21 @@
 <body style="display: none;">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-6 mt-3">
-				<h1 class="display-5 text-center">Praktikum Algoritma dan Struktur Data</h1>
-				<div class="alert alert-warning">
-					Gunakan browser Google Chrome atau Mozilla Firefox untuk menghindari kesalahan teknis. Misalnya browser Safari yang tidak secara default mendukung pemutaran video dari sumber eksternal.
-				</div>
-				<ul class="mt-3">
-					<li><a href="pengantar_ide.html">Pengantar IDE</a></li>
-					<li><a href="hello_world.html">Hello, World!</a></li>
-					<li><a href="variabel_tipe_data.html">Variabel dan Tipe Data</a></li>
-					<li>Struktur Dasar Algoritma</li>
-					<ul>
-						<li><a href="sequence.html">Sequence</a></li>
-					</ul>
-				</ul>
-				<div class="mt-3">
-					<button id="logout" class="btn btn-danger btn-sm">Get me outta here!</button>
-				</div>
+			<div class="col-8 mt-3">
+				<h1 class="display-5 text-center">Variabel dan Tipe Data</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Variabel dan Tipe Data</li>
+                    </ol>
+                </nav>
+                <!-- 16:9 aspect ratio -->
+                <div class="ratio ratio-16x9 img-thumbnail">
+                    <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1Gh9z3rSSVSKTKogh1l6XIlmWEGbSc5rZ/preview" allow="autoplay"></iframe>
+                </div>
+                <div class="mt-3">
+                    <a href="index.html" class="btn btn-secondary">Back</a>
+                </div>
 			</div>
 		</div>
 	</div>
@@ -59,10 +57,5 @@ https://bhaskaragautama.github.io/kuliah/ -->
 <script type="text/javascript">
 	$(document).ready(function() {
 		$('body').fadeIn('slow');
-		$('#logout').click(function (e) { 
-			e.preventDefault();
-			document.cookie = "cl=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/kuliah;";
-			window.location.href = 'index.html';
-		});
 	});
 </script>

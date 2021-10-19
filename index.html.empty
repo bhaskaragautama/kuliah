@@ -8,32 +8,10 @@
    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
    <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
    <link rel="stylesheet" href="assets/css/style.css">
-   <script src="assets/js/md5/md5.min.js"></script>
-   <script src="assets/js/hooman-rights.js"></script>
-   <script src="assets/js/ceck.js"></script>
 </head>
 <body style="display: none;">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-6 mt-3">
-				<h1 class="display-5 text-center">Praktikum Algoritma dan Struktur Data</h1>
-				<div class="alert alert-warning">
-					Gunakan browser Google Chrome atau Mozilla Firefox untuk menghindari kesalahan teknis. Misalnya browser Safari yang tidak secara default mendukung pemutaran video dari sumber eksternal.
-				</div>
-				<ul class="mt-3">
-					<li><a href="pengantar_ide.html">Pengantar IDE</a></li>
-					<li><a href="hello_world.html">Hello, World!</a></li>
-					<li><a href="variabel_tipe_data.html">Variabel dan Tipe Data</a></li>
-					<li>Struktur Dasar Algoritma</li>
-					<ul>
-						<li><a href="sequence.html">Sequence</a></li>
-					</ul>
-				</ul>
-				<div class="mt-3">
-					<button id="logout" class="btn btn-danger btn-sm">Get me outta here!</button>
-				</div>
-			</div>
-		</div>
+	<div class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
+		<img src="assets/img/nothing.png" class="img-fluid">
 	</div>
 
   <script src="assets/js/jquery.min.js"></script>
@@ -59,10 +37,5 @@ https://bhaskaragautama.github.io/kuliah/ -->
 <script type="text/javascript">
 	$(document).ready(function() {
 		$('body').fadeIn('slow');
-		$('#logout').click(function (e) { 
-			e.preventDefault();
-			document.cookie = "cl=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/kuliah;";
-			window.location.href = 'index.html';
-		});
 	});
 </script>
