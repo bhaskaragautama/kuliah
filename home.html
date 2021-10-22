@@ -13,25 +13,35 @@
    <script src="assets/js/ceck.js"></script>
 </head>
 <body style="display: none;">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-6 mt-3">
-				<h1 class="display-5 text-center">Praktikum Algoritma dan Struktur Data</h1>
-				<div class="alert alert-warning">
-					Gunakan browser Google Chrome atau Mozilla Firefox untuk menghindari kesalahan teknis. Misalnya browser Safari yang tidak secara default mendukung pemutaran video dari sumber eksternal.
-				</div>
-				<ul class="mt-3">
-					<li><a href="pengantar_ide.html">Pengantar IDE</a></li>
-					<li><a href="hello_world.html">Hello, World!</a></li>
-					<li><a href="variabel_tipe_data.html">Variabel dan Tipe Data</a></li>
-					<li>Struktur Dasar Algoritma</li>
-					<ul>
-						<li><a href="sequence.html">Sequence</a></li>
-					</ul>
-				</ul>
-				<div class="mt-3">
-					<button id="logout" class="btn btn-danger btn-sm">Get me outta here!</button>
-				</div>
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="display-4 text-center">Materi Perkuliahan</h1>
+				<div class="text-center">[Beta Version]</div>
+			</div>
+		</div>
+		<div class="row justify-content-center mt-3">
+			<div class="col-lg-6">
+				<div class="d-grid gap-2">
+					<a href="prak-alg-strukdat/" class="btn btn-outline-primary btn-lg">Praktikum Algoritma dan Struktur Data</a>
+				 </div>
+			</div>
+		</div>
+		<div class="row justify-content-center mt-4">
+			<div class="col-lg-6 text-center">
+				<a href="https://tinyurl.com/kuliah-stikom" target="_blank" class="me-1"><img src="assets/img/gd.png" width="10%"></a>
+				<a href="https://wa.me/6287761598092" target="_blank" class="ms-1"><img src="assets/img/wa.png" width="10%"></a>
+			</div>
+		</div>
+		<div class="row justify-content-center mt-4">
+			<div class="col-lg-6 text-center">
+				<button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#poin">Cek poin</button>
+				<a href='komentar.html' class="btn btn-primary btn-sm">Komentar</a>
+			</div>
+		</div>
+		<div class="row justify-content-center mt-4">
+			<div class="col-lg-6 text-center">
+				<button class="btn btn-danger btn-sm" id="logout">Get me outta here!</button>
 			</div>
 		</div>
 	</div>
@@ -40,6 +50,38 @@
   <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+<!-- Modal -->
+<div class="modal fade" id="poin" tabindex="-1" role="dialog" aria-labelledby="attentionLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="attentionLabel">Cek Poin</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<!-- <ul>
+					<li>
+						<a href="https://stmikstikombali-my.sharepoint.com/:x:/g/personal/bhaskara_stikom-bali_ac_id/EXcSxax0e3ZOpNT5GIlnvuIBh_mpa6qWCvWO4qF2LvQiiw?e=cjbqDl" target="_blank">BE193</a>
+					</li>
+					<li>
+						<a href="https://stmikstikombali-my.sharepoint.com/:x:/g/personal/bhaskara_stikom-bali_ac_id/EbCsMVcDwQdEn3brLC8tKnoB8ScTjhruiPxIoypOx_m7QQ?e=JVpmC3" target="_blank">BA194</a>	
+					</li>
+					<li>
+						<a href="https://stmikstikombali-my.sharepoint.com/:x:/g/personal/bhaskara_stikom-bali_ac_id/EQFL2QgkLN5BpQSb0wDD1MYBKXKMu6DQaa3T-gHviCLBEw?e=XROewU" target="_blank">BO193</a>	
+					</li>
+				</ul>
+				<div class="text-muted small">
+					Jika Anda merasa pernah mendapatkan poin namun tidak direkap, atau ada rekapan namun merasa tidak pernah mendapatkan poin, mohon melapor melalui WA.
+				</div> -->
+				Kaming sun...
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
 
 <!-- Default Statcounter code for Materi Perkuliahan
 https://bhaskaragautama.github.io/kuliah/ -->
@@ -61,7 +103,7 @@ https://bhaskaragautama.github.io/kuliah/ -->
 		$('body').fadeIn('slow');
 		$('#logout').click(function (e) { 
 			e.preventDefault();
-			document.cookie = "cl=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/kuliah;";
+			document.cookie = "cl=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path="+PATH+";";
 			window.location.href = 'index.html';
 		});
 	});

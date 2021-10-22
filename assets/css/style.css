@@ -11,3 +11,17 @@
 .extra {
     color: #dc3545;
 }
+
+a {
+    text-decoration: none;
+}
+
+.breadcrumb {
+    margin-bottom: 0;
+}
+
+.breadcrumb-wrapper {
+    padding: 10px 15px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
