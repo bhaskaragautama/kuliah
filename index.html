@@ -3,80 +3,43 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Welcome!</title>
+   <title>Materi Perkuliahan</title>
    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
    <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
-   <script src="assets/js/md5/md5.min.js"></script>
-   <script src="assets/js/hooman-rights.js"></script>
-   <script src="assets/js/hooman.js"></script>
-   <script src="assets/js/ceckidx.js"></script>
-   <script>
-      document.cookie = "cl=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path="+PATH+";";
-   </script>
+   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body style="display: none;">
-   <div class="container mb-5">
-      <div class="row justify-content-center">
-         <div class="col-lg-5 col-md-6 col-sm-12">
-            <div class="card mt-5">
-               <div class="card-header text-center"><h1 class="display-5">Which class?</h1></div>
-               <div class="card-body">
-                  <div class="d-grid gap-2">
-                     <input id="jQ42hf54" type="text" class="form-control" placeholder="Kode Kelas">
-                     <button id="check" class="btn btn-primary btn-block">Enter</button>
-                  </div>
-               </div>
-            </div>
-            <div id="nope" class="alert alert-danger mt-3 text-center" style="display: none;">
-               You are not authorized to access the content of this website. This is some kind of security, like a brat holding a water toy-gun who keep a box full of free gifts. So yes, it is weak but annoying (or not), and there is no sensitive data involved. But, why security though? Just want to limit the access. Unless you, a random dude on the internet, have a good head on your shoulder *wink*
-            </div>
-         </div>
-      </div>
-   </div>
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-12 text-center">
+				<img src="assets/img/nothing.png" class="img-fluid">
+			</div>
+		</div>
+	</div>
 
-   <script src="assets/js/jquery.min.js"></script>
-   <script src="assets/js/bootstrap.bundle.min.js"></script>
-   
-   <!-- Default Statcounter code for Panduan Penulisan TA
-   https://bhaskaragautama.github.io/tulisan/ -->
-   <script type="text/javascript">
-      var sc_project=12494052; 
-      var sc_invisible=1; 
-      var sc_security="a0c7bcdd"; 
-      var sc_https=1; 
-      var sc_remove_link=1; 
-   </script>
-   <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
-   <noscript>
-      <div class="statcounter">
-         <img class="statcounter" src="https://c.statcounter.com/12494052/0/a0c7bcdd/1/" alt="Web Analytics">
-      </div>
-   </noscript>
-   <!-- End of Statcounter Code -->
-
-   <script>
-      function secutiry() {
-         var jQ42hf54 = $('#jQ42hf54').val().toLowerCase();
-         if(jQexec(jQ42hf54) == 0){
-            $('#nope').fadeIn();
-         }
-      }
-      $(document).ready(function () {
-         $('body').fadeIn('slow', function() {
-            $('#jQ42hf54').focus();
-         });
-         $('#check').click(function (e) { 
-            e.preventDefault();
-            secutiry();
-         });
-         $('#jQ42hf54').keypress(function (e) { 
-            var key = e.which;
-            if(key == 13) {
-               secutiry();
-            }
-         });
-      });
-   </script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+<!-- Default Statcounter code for Materi Perkuliahan
+https://bhaskaragautama.github.io/kuliah/ -->
+<script type="text/javascript">
+	var sc_project=12494042; 
+	var sc_invisible=1; 
+	var sc_security="7388f50b"; 
+	var sc_https=1; 
+	var sc_remove_link=1; 
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript>
+	<div class="statcounter"><img class="statcounter" src="https://c.statcounter.com/12494042/0/7388f50b/1/" alt="Web Analytics"></div>
+</noscript>
+<!-- End of Statcounter Code -->
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('body').fadeIn('slow');
+	});
+</script>
