@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pemrograman Web Lanjut Lanjut</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+	<link rel="icon" href="../assets/favicon.ico">
+</head>
+<body style="display: none;">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-9 mt-1">
+				<h1 class="display-5">AJAX and JSON</h1>
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="../">Home</a></li>
+						<li class="breadcrumb-item"><a href="../prog-web">Pemrograman Web Lanjut Lanjut</a></li>
+						<li class="breadcrumb-item active" aria-current="page">AJAX and JSON</li>
+					</ol>
+				</nav>	
+				<div class="ratio ratio-16x9 img-thumbnail">
+					<iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1EMokjpx7vE6Q9v_f51-tBoq-rkswmx3W/preview" allow="autoplay"></iframe>
+				</div>
+				<div>
+					<small class="text-muted">Jika video tidak bisa diputar, mohon clear cache browser/gunakan incognito mode/gunakan browser lain.</small>
+				</div>
+				<a href="index.html" class="btn btn-warning btn-sm mt-3">Back</a>
+				<button class="btn btn-primary btn-sm mt-3" data-toggle="modal" data-target="#komentar">Comments</button>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<!-- Modal -->
+<div class="modal fade" id="komentar" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="komentarLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSckI8gbQ_-1STFz6qoRPyj7IAqDXD5DOIAWIJhEZQt5S3z7hA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a href="../komentar.html" class="btn btn-primary">Show Comments</a>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Default Statcounter code for Materi Perkuliahan
+https://bhaskaragautama.github.io/kuliah/ -->
+<script type="text/javascript">
+	var sc_project=12494042; 
+	var sc_invisible=1; 
+	var sc_security="7388f50b"; 
+	var sc_https=1; 
+	var sc_remove_link=1; 
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript>
+	<div class="statcounter"><img class="statcounter" src="https://c.statcounter.com/12494042/0/7388f50b/1/" alt="Web Analytics"></div>
+</noscript>
+<!-- End of Statcounter Code -->
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('body').fadeIn('slow');
+	});
+</script>
