@@ -290,7 +290,8 @@ https://bhaskaragautama.github.io/kuliah/ -->
 <script type="text/javascript">
     $(document).ready(function () {
         $("body").fadeIn("slow");
-        $(".list-dropdown").click(function () {
+        $("a[data-bs-toggle='collapse']").click(function () {
+            console.log("click");
             $(this).children().toggleClass("fa-caret-down fa-caret-right");
         });
     });
